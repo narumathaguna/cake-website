@@ -969,3 +969,82 @@ footer {
   .hero-stats { gap: 1.5rem; }
   .stat .n { font-size: 1.6rem; }
 }
+
+/* ─── FSSAI ───────────────────────────────── */
+#certification { background: #ffffff; border-top: 1px solid var(--beige2); border-bottom: 1px solid var(--beige2); }
+
+.fssai-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 5rem; align-items: center;
+}
+
+/* Left */
+.fssai-left { display: flex; flex-direction: column; gap: 24px; }
+.fssai-head { display: flex; align-items: center; gap: 14px; }
+.fssai-head-icon { font-size: 2.8rem; }
+.fssai-head-title { font-family: 'Playfair Display', serif; font-size: 1.8rem; font-weight: 700; color: var(--berry); line-height: 1; margin-bottom: 4px; }
+.fssai-head-sub   { font-size: 0.72rem; color: var(--muted); letter-spacing: 0.06em; }
+
+.fssai-badges { display: flex; flex-direction: column; gap: 10px; }
+.fb {
+  display: flex; align-items: center; gap: 14px;
+  background: var(--cream); border: 1px solid var(--beige2);
+  border-radius: 12px; padding: 12px 16px;
+  transition: background 0.2s, transform 0.2s, border-color 0.2s;
+}
+.fb:hover { background: var(--beige); border-color: var(--gold); transform: translateX(5px); }
+.fb-icon  { font-size: 1.3rem; min-width: 28px; text-align: center; flex-shrink: 0; }
+.fb-title { font-weight: 700; color: var(--choc); font-size: 0.86rem; margin-bottom: 1px; }
+.fb-sub   { font-size: 0.7rem; color: var(--muted); }
+
+.fssai-dl {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: linear-gradient(135deg, var(--gold), var(--gold2));
+  color: var(--choc); padding: 13px 26px; border-radius: 50px;
+  font-weight: 700; font-size: 0.86rem; letter-spacing: 0.05em;
+  box-shadow: 0 8px 24px rgba(201,150,58,0.35);
+  transition: transform 0.2s, box-shadow 0.2s; width: fit-content;
+}
+.fssai-dl:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(201,150,58,0.45); }
+
+/* Right — cert card */
+.fssai-right { display: flex; justify-content: center; }
+.cert-card {
+  background: #fff; border-radius: 20px; padding: 28px;
+  box-shadow: 0 8px 32px rgba(44,24,16,0.1);
+  width: 100%; max-width: 400px;
+  border-top: 5px solid var(--gold);
+  position: relative; overflow: hidden;
+}
+.cert-card::before {
+  content: 'FSSAI'; position: absolute;
+  top: 50%; left: 50%; transform: translate(-50%,-50%) rotate(-25deg);
+  font-family: 'Playfair Display', serif; font-size: 5rem; font-weight: 900;
+  color: rgba(201,150,58,0.05); pointer-events: none; white-space: nowrap;
+}
+.cert-top { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; }
+.cert-fssai-badge {
+  font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 900;
+  color: #0066cc; background: rgba(0,102,204,0.08);
+  padding: 6px 12px; border-radius: 8px;
+  border: 1.5px solid rgba(0,102,204,0.15); flex-shrink: 0;
+}
+.cert-top-text .ct-title { font-family: 'Playfair Display', serif; font-size: 0.95rem; font-weight: 700; color: var(--choc); }
+.cert-top-text .ct-sub   { font-size: 0.65rem; color: var(--muted); }
+.cert-divider { height: 1px; background: var(--beige2); margin: 0 0 16px; }
+.cert-rows { display: flex; flex-direction: column; gap: 10px; margin-bottom: 16px; }
+.cert-row  { display: flex; gap: 12px; align-items: flex-start; }
+.cr-label  { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); min-width: 100px; flex-shrink: 0; padding-top: 1px; }
+.cr-val    { font-size: 0.83rem; color: var(--choc); font-weight: 500; line-height: 1.4; }
+.cr-val.bold  { font-weight: 800; font-family: 'Playfair Display', serif; }
+.cr-val.green { color: #16a34a; font-weight: 700; }
+.cert-footer { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.cert-seal   { font-size: 1.4rem; }
+.cert-seal-label { font-size: 0.72rem; font-weight: 700; color: var(--muted); }
+.cert-active {
+  background: #16a34a; color: #fff;
+  font-size: 0.62rem; font-weight: 800; letter-spacing: 0.12em;
+  padding: 5px 14px; border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(22,163,74,0.3);
+}
+
