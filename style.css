@@ -974,8 +974,9 @@ footer {
 #certification { background: #ffffff; border-top: 1px solid var(--beige2); border-bottom: 1px solid var(--beige2); }
 
 .fssai-grid {
-  display: grid; grid-template-columns: 1fr 1fr;
-  gap: 5rem; align-items: center;
+  display: flex; flex-direction: column;
+  align-items: center; gap: 2.5rem;
+  max-width: 680px; margin: 0 auto;
 }
 
 /* Left */
