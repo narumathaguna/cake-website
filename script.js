@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    const wa = `Hi Divine Delights! 🍰
+    const wa = `Hi Divine Delights! 
 
 Name: ${name}
 Phone: ${phone}
